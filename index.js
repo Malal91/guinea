@@ -204,7 +204,7 @@ module.exports = {
     },
 
     getRegionBySubprefecture: function(subprefecture){
-
+       
     },
 
     getCommunes: function(){
@@ -227,7 +227,22 @@ module.exports = {
     },
 
     getCommuneByQuartier: function(quartier){
+        var result = ''
+        var data_el = datas.filter(function(props){
+            return props.quartier
+        })
 
+        data_el.map(function(element){
+            element.sub_prefecture.map(function(el){
+                for(i=0; i < el.quartier.length; i++){
+                    if(quartier.toUpperCase() == el.quartier[i].toUpperCase()){
+                        result = el.town
+                    }
+                }
+            })
+        })
+
+        return result
     },
 
     getQuartiers: function(){
@@ -294,7 +309,7 @@ module.exports = {
     },
 
     getPrefectureBySubprefecture: function(subprefecture){
-
+       
     },
 
     getSubprefectures: function(){
