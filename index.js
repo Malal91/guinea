@@ -1,12 +1,10 @@
-const datas = [
-    {
+const datas = [{
         "prefecture": "CONAKRY",
-        "sub_prefecture": [
-            {
-                "town": "Dixinn", 
-                "quartier":["Belle-vue école", "Belle-vue-marché", "Camayenne", "Cameroun", "Dixinn-cité1", "Dixinn-cité 2", "Dixinn-gare", "Dixinn-gare-rails", "Dixinn-mosquée", "Dixinn-port", "Hafia 1", "Hafia 2", "Hafia-minière", "Hafia-mosquée", "Kénien", "Landréah", "Minière-cité"]
+        "sub_prefecture": [{
+                "town": "Dixinn",
+                "quartier": ["Belle-vue école", "Belle-vue-marché", "Camayenne", "Cameroun", "Dixinn-cité1", "Dixinn-cité 2", "Dixinn-gare", "Dixinn-gare-rails", "Dixinn-mosquée", "Dixinn-port", "Hafia 1", "Hafia 2", "Hafia-minière", "Hafia-mosquée", "Kénien", "Landréah", "Minière-cité"]
             },
-            {  
+            {
                 "town": "Kaloum",
                 "quartier": ["Almamya", "Boulbinet", "Coronthie", "Fotoba", "Kassa", "Kouléwondy", "Manquepas", "Sandervalia", "Sans-fil", "Témitaye", "Tombo"]
             },
@@ -32,157 +30,183 @@ const datas = [
     },
     {
         "prefecture": "BOFFA",
-        "sub_prefecture": ["Boffa-Centre", "Colia","Doupro", "Koba-Tatema", "Lisso", "Mankountan", "Tamita", "Tougnifili"]
+        "sub_prefecture": ["Boffa-Centre", "Colia", "Doupro", "Koba-Tatema", "Lisso", "Mankountan", "Tamita", "Tougnifili"],
+        "region": "BOKE"
     },
     {
         "prefecture": "BOKE",
         "sub_prefecture": ["Bintimodiya", "Boke-Centre", "Dabiss", "Kamsar", "Kanfarande", "Kolaboui", "Malapouyah", "Sangaredi", "Sansale", "Tanene"],
-        
+
         //-------------------VARIABLE------------//
         "region": true
         //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "FRIA",
-        "sub_prefecture": ["Baguinet", "Banguingny", "Fria-Centre", "Tormelin"]
+        "sub_prefecture": ["Baguinet", "Banguingny", "Fria-Centre", "Tormelin"],
+        "region": "BOKE"
     },
     {
         "prefecture": "GAOUAL",
-        "sub_prefecture": ["Foulamory", "Gaoual-Centre", "Kakony", "Koumbia", "Kounsitel", "Malanta", "Touba", "Wendou M'bour"]
+        "sub_prefecture": ["Foulamory", "Gaoual-Centre", "Kakony", "Koumbia", "Kounsitel", "Malanta", "Touba", "Wendou M'bour"],
+        "region": "BOKE"
     },
     {
         "prefecture": "KOUNDARA",
-        "sub_prefecture": ["Guingan", "Kamaby", "Koundara-Centre", "Sambailo", "Sareboido", "Termesse","Youkounkoun"]
+        "sub_prefecture": ["Guingan", "Kamaby", "Koundara-Centre", "Sambailo", "Sareboido", "Termesse", "Youkounkoun"],
+        "region": "BOKE"
     },
     {
         "prefecture": "DABOLA",
-        "sub_prefecture": ["Arfamoussaya","Banko","Bissikrima","Dabola-centre","Dogomet","Kankama","Kindoye","Konindou","N'Dema"]
+        "sub_prefecture": ["Arfamoussaya", "Banko", "Bissikrima", "Dabola-centre", "Dogomet", "Kankama", "Kindoye", "Konindou", "N'Dema"],
+        "region": "FARANAH"
     },
     {
         "prefecture": "DINGUIRAYE",
-        "sub_prefecture": ["Banora","Dialakoro","Diatifere","Dinguiraye-centre","Gagnakali","Kalinko","Lansanya","Selouma"]
+        "sub_prefecture": ["Banora", "Dialakoro", "Diatifere", "Dinguiraye-centre", "Gagnakali", "Kalinko", "Lansanya", "Selouma"],
+        "region": "FARANAH"
     },
     {
         "prefecture": "FARANAH",
-        "sub_prefecture": ["Banian","Beindou","Faranah-centre","Gnaleah","Heremakonon","Kobikoro","Maréla","Passayah","sandeniah","Songoyah","Tindo","Tiro"],
+        "sub_prefecture": ["Banian", "Beindou", "Faranah-centre", "Gnaleah", "Heremakonon", "Kobikoro", "Maréla", "Passayah", "sandeniah", "Songoyah", "Tindo", "Tiro"],
         //-------------------VARIABLE------------//
         "region": true
         //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "KISSIDOUGOU",
-        "sub_prefecture": ["Albadariah","Banama","Bardou","Beindou","Fermesadou","Firawa (Yomadou)","Gbangbadou","kissidougou Centre","Koundiatou","Manfran","Sangardo","Yende-Millimou","Yombiro"]
+        "sub_prefecture": ["Albadariah", "Banama", "Bardou", "Beindou", "Fermesadou", "Firawa (Yomadou)", "Gbangbadou", "kissidougou Centre", "Koundiatou", "Manfran", "Sangardo", "Yende-Millimou", "Yombiro"],
+        "region": "FARANAH"
     },
     {
         "prefecture": "KANKAN",
-        "sub_prefecture": ["Balandougou","Bate-nafadji","Boula","Gberedou-Baranama","Kankan-centre","Karifamoriyah","Koumban","Mamouroudou","Missamana","Moribayah","Sabadou-Baranama","Tinti-Oulen","Tokounou"],
-         //-------------------VARIABLE------------//
-         "region": true
-         //------------------AND VARIABLE---------//
+        "sub_prefecture": ["Balandougou", "Bate-nafadji", "Boula", "Gberedou-Baranama", "Kankan-centre", "Karifamoriyah", "Koumban", "Mamouroudou", "Missamana", "Moribayah", "Sabadou-Baranama", "Tinti-Oulen", "Tokounou"],
+        //-------------------VARIABLE------------//
+        "region": true
+        //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "KEROUANE",
-        "sub_prefecture": ["Banankoro","Damaro","Kereouane centre","Komodou","Kounsankoro","Linko","Sibiribaro","Soromaya"]
+        "sub_prefecture": ["Banankoro", "Damaro", "Kereouane centre", "Komodou", "Kounsankoro", "Linko", "Sibiribaro", "Soromaya"],
+        "region": "KANKAN"
     },
     {
         "prefecture": "KOUROUSSA",
-        "sub_prefecture": ["Babila","Balato","Banfele","Baro","Cissela","Douako","Doura","Kiniero","Komola-Koura","Koumana","Kouroussa centre","Sanguiana"]
+        "sub_prefecture": ["Babila", "Balato", "Banfele", "Baro", "Cissela", "Douako", "Doura", "Kiniero", "Komola-Koura", "Koumana", "Kouroussa centre", "Sanguiana"],
+        "region": "KANKAN"
     },
     {
         "prefecture": "MANDIANA",
-        "sub_prefecture": ["Balandougouba","Dialakoro","Faralako","Kantoumanina","Kinieran","Kondianakoro","Koundian","Mandiana-centre","Morodou","Niantania","Saladou","Sansando"]
+        "sub_prefecture": ["Balandougouba", "Dialakoro", "Faralako", "Kantoumanina", "Kinieran", "Kondianakoro", "Koundian", "Mandiana-centre", "Morodou", "Niantania", "Saladou", "Sansando"],
+        "region": "KANKAN"
     },
     {
         "prefecture": "SIGUIRI",
-        "sub_prefecture": ["Bankon","Doko","Franwalia","Kiniebakoura","Kintinian","Malea","Naboun","Niagassola","Niandankoro","Norassoba","Nounkounkan","Siguiri-centre","Siguirini"]
+        "sub_prefecture": ["Bankon", "Doko", "Franwalia", "Kiniebakoura", "Kintinian", "Malea", "Naboun", "Niagassola", "Niandankoro", "Norassoba", "Nounkounkan", "Siguiri-centre", "Siguirini"],
+        "region": "KANKAN"
     },
     {
         "prefecture": "COYAH",
-        "sub_prefecture": ["Coyah centre","Kouriya","Maneah","Wonkifong"]
+        "sub_prefecture": ["Coyah centre", "Kouriya", "Maneah", "Wonkifong"],
+        "region": "KINDIA"
     },
     {
         "prefecture": "DUBREKA",
-        "sub_prefecture": ["Badi","Dubreka-centre","Falessade","Khorira","Ouassou","Tanene","Tondon"]
+        "sub_prefecture": ["Badi", "Dubreka-centre", "Falessade", "Khorira", "Ouassou", "Tanene", "Tondon"],
+        "region": "KINDIA"
     },
     {
         "prefecture": "FORECARIAH",
-        "sub_prefecture": ["Alassoya","Benty","Farmoriah","Forecareah Centre","Kaback","Kakossa","Kallia","Maferenya","Moussaya","Sikhourou"]
+        "sub_prefecture": ["Alassoya", "Benty", "Farmoriah", "Forecareah Centre", "Kaback", "Kakossa", "Kallia", "Maferenya", "Moussaya", "Sikhourou"],
+        "region": "KINDIA"
     },
     {
         "prefecture": "KINDIA",
-        "sub_prefecture": ["Bangouyah","Damankanyah","Friguiagbe","Kindia centre","Kolente","Lynsan","Madina Oula","Mambiya","Molota","Samayah","Sougueta"],
-         //-------------------VARIABLE------------//
-         "region": true
-         //------------------AND VARIABLE---------//
+        "sub_prefecture": ["Bangouyah", "Damankanyah", "Friguiagbe", "Kindia centre", "Kolente", "Lynsan", "Madina Oula", "Mambiya", "Molota", "Samayah", "Sougueta"],
+        //-------------------VARIABLE------------//
+        "region": true
+        //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "TELIMELE",
-        "sub_prefecture": ["Bourouwal","Daramagnaky","Gougoudje","Koba","Kollet","Konsotamy","Missira","Santou","Sarekaly","Sinta","Sogolon","Tarihoye","Telimele centre","Thionthian"]
+        "sub_prefecture": ["Bourouwal", "Daramagnaky", "Gougoudje", "Koba", "Kollet", "Konsotamy", "Missira", "Santou", "Sarekaly", "Sinta", "Sogolon", "Tarihoye", "Telimele centre", "Thionthian"],
+        "region": "KINDIA"
     },
     {
         "prefecture": "KOUBIA",
-        "sub_prefecture": ["Fafaya","Gadha Woundou","Koubia centre","Matakaou","Missira","Pilimini"]
+        "sub_prefecture": ["Fafaya", "Gadha Woundou", "Koubia centre", "Matakaou", "Missira", "Pilimini"],
+        "region": "LABE"
     },
     {
         "prefecture": "LABE",
-        "sub_prefecture": ["Dalein","Daralabe","Diari","Dionfo","Garambe","Hafia","Kaalan","Kouramangui","Labé centre","Noussy","Popodara","Sannoun","Taranbaly","Tountouroun"],
-         //-------------------VARIABLE------------//
-         "region": true
-         //------------------AND VARIABLE---------//
+        "sub_prefecture": ["Dalein", "Daralabe", "Diari", "Dionfo", "Garambe", "Hafia", "Kaalan", "Kouramangui", "Labé centre", "Noussy", "Popodara", "Sannoun", "Taranbaly", "Tountouroun"],
+        //-------------------VARIABLE------------//
+        "region": true
+        //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "LELOUMA",
-        "sub_prefecture": ["Balaya","Djountou","Herico","Korbe","Lafou","Lelouma centre","Linsansaran","Manda","Parawol","Sagale","Tyanguel-Bori"]
+        "sub_prefecture": ["Balaya", "Djountou", "Herico", "Korbe", "Lafou", "Lelouma centre", "Linsansaran", "Manda", "Parawol", "Sagale", "Tyanguel-Bori"],
+        "region": "LABE"
     },
     {
         "prefecture": "MALI",
-        "sub_prefecture": ["Balaki","Donghol Sigon","Dougountouny","Fougou","Gayah","Hidayatou","Lebekere","Madina Wora","Mali centre","Salambande","Telire","Touba","Yembereng"]
+        "sub_prefecture": ["Balaki", "Donghol Sigon", "Dougountouny", "Fougou", "Gayah", "Hidayatou", "Lebekere", "Madina Wora", "Mali centre", "Salambande", "Telire", "Touba", "Yembereng"],
+        "region": "LABE"
     },
     {
         "prefecture": "TOUGUE",
-        "sub_prefecture": ["Fatako","Fello Koundoua","Kansangui","Kolangui","Kollet","Konah","Kouratongo","Koyin","Tangaly","Tougue centre"]
+        "sub_prefecture": ["Fatako", "Fello Koundoua", "Kansangui", "Kolangui", "Kollet", "Konah", "Kouratongo", "Koyin", "Tangaly", "Tougue centre"],
+        "region": "LABE"
     },
     {
         "prefecture": "DALABA",
-        "sub_prefecture": ["Bodié","Dalaba centre","Ditinn","Kaalan","Kankalabe","Kebali","Koba","Mafara","Mitty","Mombeyah"]
+        "sub_prefecture": ["Bodié", "Dalaba centre", "Ditinn", "Kaalan", "Kankalabe", "Kebali", "Koba", "Mafara", "Mitty", "Mombeyah"],
+        "region": "MAMOUN"
     },
     {
         "prefecture": "MAMOUN",
-        "sub_prefecture": ["Bouliwel","Dounet","Gongoret","Kegneko","Konkoure","Mamou centre","Nyagara","Oure Kaba","Poredaka","Saramoussaya","Soyah","Teguereya","Timbo","Tolo"],
-         //-------------------VARIABLE------------//
+        "sub_prefecture": ["Bouliwel", "Dounet", "Gongoret", "Kegneko", "Konkoure", "Mamou centre", "Nyagara", "Oure Kaba", "Poredaka", "Saramoussaya", "Soyah", "Teguereya", "Timbo", "Tolo"],
+        //-------------------VARIABLE------------//
         "region": true
         //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "PITA",
-        "sub_prefecture": ["Bantignel","Bourouwal Tappe","Dongol Touma","Gongore","Ley-Miro","Maci","Ninguelande","Pita centre","Sangareah","Sintaly","Timbi-Madina","Timbi-Touny"]
+        "sub_prefecture": ["Bantignel", "Bourouwal Tappe", "Dongol Touma", "Gongore", "Ley-Miro", "Maci", "Ninguelande", "Pita centre", "Sangareah", "Sintaly", "Timbi-Madina", "Timbi-Touny"],
+        "region": "MAMOUN"
     },
     {
         "prefecture": "BEYLA",
-        "sub_prefecture": ["Beyla centre","Boola","Diarraguerela","Diassadou","Fouala","Gbackédou","Gbéssoba","karala","Koumandou","Mousadou","Nionsomoridou","Samana","Sinko","Sokourala"]
+        "sub_prefecture": ["Beyla centre", "Boola", "Diarraguerela", "Diassadou", "Fouala", "Gbackédou", "Gbéssoba", "karala", "Koumandou", "Mousadou", "Nionsomoridou", "Samana", "Sinko", "Sokourala"],
+        "region": "NZEREKORE"
     },
     {
         "prefecture": "GUECKEDOU",
-        "sub_prefecture": ["Bolodou","Fangamadou","Guéckédou centre","Guéndembou","Kassadou","Koundou","Nongoa","Ouendé Kénéma","Tékoulo","Terméssadou Djibo"]
+        "sub_prefecture": ["Bolodou", "Fangamadou", "Guéckédou centre", "Guéndembou", "Kassadou", "Koundou", "Nongoa", "Ouendé Kénéma", "Tékoulo", "Terméssadou Djibo"],
+        "region": "NZEREKORE"
     },
     {
         "prefecture": "LOLA",
-        "sub_prefecture": ["Bossou","Foumbadou","Gama Berema","Guéassou","Kokota","Laine","Lola centre","N'Zoo","Tounkarata"]
+        "sub_prefecture": ["Bossou", "Foumbadou", "Gama Berema", "Guéassou", "Kokota", "Laine", "Lola centre", "N'Zoo", "Tounkarata"],
+        "region": "NZEREKORE"
     },
     {
         "prefecture": "MACENTA",
-        "sub_prefecture": ["Balizia","Binikala","Bofossou","Daro","Fassankoni","Kouankan","Koyama","Macenta centre","N'Zébéla","Orémaï","Panziazou","Semgbédou","Sérédou","Vasérédou","Watanka"]
+        "sub_prefecture": ["Balizia", "Binikala", "Bofossou", "Daro", "Fassankoni", "Kouankan", "Koyama", "Macenta centre", "N'Zébéla", "Orémaï", "Panziazou", "Semgbédou", "Sérédou", "Vasérédou", "Watanka"],
+        "region": "NZEREKORE"
     },
     {
-        "prefecture": "N'ZEREKORE",
-        "sub_prefecture": ["Bounouma","Gouécké","Kobéla","Koropara","Koulé","N'Zérékoré centre","Palé","Samoé","Soulouma","Womey","Yalenzou"],
-         //-------------------VARIABLE------------//
-         "region": true
-         //------------------AND VARIABLE---------//
+        "prefecture": "NZEREKORE",
+        "sub_prefecture": ["Bounouma", "Gouécké", "Kobéla", "Koropara", "Koulé", "N'Zérékoré centre", "Palé", "Samoé", "Soulouma", "Womey", "Yalenzou"],
+        //-------------------VARIABLE------------//
+        "region": true
+        //------------------AND VARIABLE---------//
     },
     {
         "prefecture": "YOMOU",
-        "sub_prefecture": ["Banié","Bheta","Bignamou","Bowé","Diécké","Péla","Yomou centre"]
+        "sub_prefecture": ["Banié", "Bheta", "Bignamou", "Bowé", "Diécké", "Péla", "Yomou centre"],
+        "region": "NZEREKORE"
     }
 ]
 
@@ -203,6 +227,27 @@ module.exports = {
         return result.sort()
     },
 
+    getPrefecturesByRegion: function (region) {
+        var result = []
+        if(region){
+            var _r = datas.filter(function (el) {
+                return el.region == region.toUpperCase()
+            })
+
+            _r.map(function(_el){
+                if(result.length != 0){
+                    result.push(_el.prefecture)
+                }else{
+                    result = [''+_el.prefecture+'']
+                }
+            })
+
+            return result.sort()
+        }else{
+            console.log("Paramètre invalide")
+        }
+    },
+
     getRegionBySubprefecture: function(subprefecture){
        
     },
@@ -214,13 +259,13 @@ module.exports = {
         })
 
         props.map(function(element){
-                element.sub_prefecture.map(function(el){
-                    if(result.length != 0){
-                        result.push(el.town)
-                    }else{
-                        result = [''+el.town+'']
-                    }
-                })
+            element.sub_prefecture.map(function(el){
+                if(result.length != 0){
+                    result.push(el.town)
+                }else{
+                    result = [''+el.town+'']
+                }
+            })
         })
 
         return result.sort()
@@ -366,7 +411,36 @@ module.exports = {
     },
 
     getSubprefecturesByRegion: function(region){
+        var result = []
+        var _r
+        region = region.toUpperCase()
+        if(region == 'CONAKRY'){
+            var props = datas.filter(function(props){
+                return props.commune
+            })
 
+            props.map(function(element){
+                element.sub_prefecture.map(function(el){
+                    if(result.length != 0){
+                        result.push(el.town)
+                    }else{
+                        result = [''+el.town+'']
+                    }
+                })
+            })
+        }else{
+            _r = datas.filter(function(datas){
+                return datas.region == region
+            })
+        
+            if(_r.length != 0){
+                _r.map(function(el){
+                    result = el.sub_prefecture
+                })
+            }
+        }
+
+        return result.sort()
     },
 
     getCapital: function(){
